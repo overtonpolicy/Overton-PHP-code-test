@@ -6,7 +6,7 @@
 
 Thanks for agreeing to run through this exercise.
 
-During it you'll be tackling a short challenge based on tasks & themes from the real life Overton codebase. You'll be collecting data, parsing it and then feeding it through a simple data processing pipeline. We're keen to see what you come up with!
+During it you'll be tackling a short challenge based on themes from the real life Overton codebase. You'll be collecting data, parsing it and then feeding it through a very simple data processing pipeline. We're keen to see what you come up with!
 
 You should be able to finish the first three parts of the exercise in about an hour. After you've submitted the test we'll schedule a call where you'll have the opportunity to walk us through it.
 

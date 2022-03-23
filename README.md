@@ -8,9 +8,9 @@ Thanks for agreeing to run through this exercise.
 
 During it you'll be tackling a short challenge based on tasks & themes from the real life Overton codebase. You'll be collecting data, parsing it and then feeding it through a simple data processing pipeline. We're keen to see what you come up with!
 
-You should be able to finish the exercise in about an hour. After you've submitted the test we'll schedule a call where you'll have the opportunity to walk us through it.
+You should be able to finish the first three parts of the exercise in about an hour. After you've submitted the test we'll schedule a call where you'll have the opportunity to walk us through it.
 
-Please don't spend too much longer than 90 minutes on this: it's fine to leave parts out. The aim _isn't_ for you to produce perfect, production ready code; rather it's for you to be able to get a feel for what Overton does and for you to show us how you approach new projects and problems. We're interested in your thinking as much as the final output and this test gives us lots of jumping off points for chatting later, when you walk us through your work.
+Please don't spend too much longer than 90 minutes in total on this: it's fine to leave parts out. The aim _isn't_ for you to produce perfect, production ready code; rather it's for you to be able to get a feel for what Overton does and for you to show us how you approach new projects and problems. We're interested in your thinking as much as the final output and this test gives us lots of jumping off points for chatting later, when you walk us through your work.
 
 We'd like you to code in PHP, but you can use any (or no) framework or helper libraries you like.
 

@@ -1,4 +1,4 @@
-# Overton code test (March 23rd 2022)
+# Overton code test (April 2022)
 
 ## Introduction
 
@@ -42,12 +42,9 @@ Tips:
 
 * It's likely that in the future we'll want to avoid calling the same website more than once a second
 * It's likely that in the future we'll want to specify a user agent string in the web request
+* It's likely that we'd want to do something very similar with other websites in the future
 
-For discussion later:
-
-* Imagine we have a list of 20,000 pages to download from approx 200 different domains - how would you organize things to maximize throughpout while remaining a good internet citizen (don't call the same domain more than once every, say, 5 seconds)?
- 
-## 2. Process each link
+## 2. Processing each link
 
 Using the list of links you generated in step 1 - take the first 50 and discard the rest.
 
@@ -56,7 +53,7 @@ Write some code to download the web pages pointed to by the 50 links and then pa
 * The title of the page: the xpath for this is:
 
 ```
-//meta[@property='og:description'] (in the "content" attribute)
+//meta[@property='og:title'] (in the "content" attribute)
 ```
 
 * The authors of the page: note there may be more than one. The xpath for this is: 
@@ -75,16 +72,24 @@ For discussion later:
 
 * What other approaches could we take to extracting titles, authors and publication dates from pages like these?
 
-## 3. Analyzing the data
+## 3. Scaling up
 
-We want to produce a report showing which organizations are producing content published on gov.uk.
+Imagine that each day we'll have a new batch of 6,000 pages to download from around 600 different domains - can you quickly sketch out a system that can help us maximize throughput & efficiency while still remaining a good internet citizen?
 
-Using the authors data you gathered in step 2, write code to create a simple HTML file that contains an ordered list of gov.uk authors showing how many documents in our set of 50 they are associated with (the department with the most number of documents should be at the top of the list).
+Some constraints & resources:
 
-The resulting web page doesn't need to look beautiful!
+* We have a pool of 20 proxy servers that can be used to make calls.
+* Each domain has an associated minimum delay X. For gov.uk it might be 10s, for whitehouse.gov it might be 30s etc.
+* We don't want to call a domain from any of our IPs more than once every X seconds.
+* If we get blocked by a site (we get a 429 response code) we should back off for an hour.
+* It doesn't matter what order the links are retrieved in.
 
-Save this HTML to disk.
+You don't need to produce a fully fleshed out design document! We're looking for two things:
 
+* How would you (v roughly) architect this system
+* What techniques or approaches might you use in the actual code
+
+We'll go through this together on the call so don't worry about covering absolutely everything, these should mainly be notes for yourself.
 
 ## 4. COMPLETELY OPTIONAL - dealing with domains
 

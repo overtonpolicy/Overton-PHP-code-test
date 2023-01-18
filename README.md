@@ -33,7 +33,7 @@ The links you extract may be absolute (e.g. https://www...) or relative (e.g. /d
 Tips:
 
 * We'd definitely recommend implementing some very simple caching to speed up multiple runs while testing
-* At Overton we use the DOM extension, specifically DOMDocument and DOMXPath classes
+* At Overton we use PHP's DOM extension, specifically DOMDocument and DOMXPath classes
 * An xpath you can use to find the relevant links on this webpage is: 
 
 ```

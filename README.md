@@ -89,7 +89,7 @@ You don't need to produce a fully fleshed out design document! We're looking for
 * How would you (v roughly) architect this system
 * What techniques or approaches might you use in the actual code
 
-We'll go through this together on the call so don't worry about covering absolutely everything, these should mainly be notes for yourself.
+We'll go through this together on the call so don't worry about covering absolutely everything, these should mainly be notes for yourself. - That being said it would be good if they could be included in your repository so we can get a brief overview of your thinking ahead of time
 
 ## 4. Send us the code
 

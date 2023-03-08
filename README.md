@@ -12,7 +12,7 @@ You should be able to finish the first three parts of the exercise in about an h
 
 Please don't spend too much longer than 90 minutes in total on this: it's fine to leave parts out. The aim _isn't_ for you to produce perfect, production ready code; rather it's for you to be able to get a feel for what Overton does and for you to show us how you approach new projects and problems. We're interested in your thinking as much as the final output and this test gives us lots of jumping off points for chatting later, when you walk us through your work.
 
-We'd like you to code in PHP or Python, but you can use any (or no) framework or helper libraries you like. It'd be useful for the end result to include a script that can be run from the CLI.
+We'd like you to code in PHP or Python, but you can use any (or no) framework or helper libraries you like. It'd be useful for the end result to include a script that can be run from the CLI - Preferably with some kind of progress outputs.
 
 ## 1. Download data from gov.uk
 
@@ -91,22 +91,6 @@ You don't need to produce a fully fleshed out design document! We're looking for
 
 We'll go through this together on the call so don't worry about covering absolutely everything, these should mainly be notes for yourself.
 
-## 4. COMPLETELY OPTIONAL - dealing with domains
-
-In the real Overton pipeline we download PDF files and convert these to text and layout information. We'll skip that step here: instead let's use the data/example_document_fulltext.html file.
-
-Write some code that loads this file and extracts all links matching this xpath expression:
-
-```
-//li[@role='doc-endnote']//a[@rel='external']
-```
-
-Extract the domain of each link and keep track of how often it is seen, then create a simple HTML file that contains an ordered list showing each domain and how often it has been cited.
-
-For discussion later:
-
-* In the future we might want to handle spurious subdomains like www, www2 etc. rather than treating www.lse.ac.uk and www2.lse.ac.uk as separate domains. However, some top level sites like gov.uk have more important subdomains that we'd want to keep e.g. for www.ons.gov.uk we'd want the domain to be ons.gov.uk
-
-## 5. Send us the code
+## 4. Send us the code
 
 Commit your code to github and make it public and send us the URL or zip up the repository and email it to nick@overton.io

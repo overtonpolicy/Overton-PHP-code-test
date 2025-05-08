@@ -37,7 +37,7 @@ Tips:
 * An xpath you can use to find the relevant links on this webpage is: 
 
 ```
-//div[contains(@class, 'finder-results')]//li[contains(@class, 'gem-c-document-list__item')]/a (in the "href" attribute)
+//div[@id='js-results']//li/div/a (in the "href" attribute)
 ```
 
 * It's likely that in the future we'll want to avoid calling the same website more than once a second
